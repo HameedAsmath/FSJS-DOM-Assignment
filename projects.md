@@ -18,6 +18,13 @@
 
 ![Output](./Pic2.png)
 
+## Solution 1
+```
+     document.querySelector(".side-bar .crayons-card .crayons-subtitle-2").innerHTML = "Hameed"
+
+     document.querySelector(".side-bar .crayons-card .color-base-70").innerHTML = "I Write Code"
+```
+
 2. Website Name: [Apple](https://support.apple.com/en-in)
 
 ### Task
@@ -29,6 +36,19 @@
 ### Output
 
 ['iPhone', 'Mac', 'iPad', 'Watch', 'AirPods', 'Music', 'TV']
+
+## Solution 2
+```
+let products = document.querySelectorAll(".row .as-imagegrid-item a span")
+
+let arr=[]
+
+products.forEach(function(product){
+     if(product.innerText!="Support"){
+     if(product.innerText.includes("\n")){
+          arr.push(product.innerText.replace('\nSupport','')
+               )}}})
+```
 
 3. Webiste Name: [Youtube Support](https://support.google.com/youtube/)
 
@@ -48,6 +68,14 @@
 
 ![Output](./Pic5.png)
 
+## Solution 3
+```
+let parent = document.querySelector(".accordion-homepage");
+let newFaq = document.createElement("h3");
+newFaq.textContent = "Add My FAQ";
+parent.appendChild(newFaq);
+```
+
 4. Webiste Name: [OnePlus](https://www.oneplus.in/support)
 
 ### Topics
@@ -65,6 +93,11 @@
 ### Output
 
 ![Output](./Pic7.png)
+
+## Solution 4
+```
+document.querySelector(".customer-support a").innerText = "6361264269"
+```
 
 5. Webiste Name: [Samsung](https://www.samsung.com/in/offer/online/samsung-fest/)
 
@@ -84,6 +117,11 @@
 
 ![Output](./Pic9.png)
 
+## Solution 5 
+```
+document.querySelector(".listing .mytabs .diwali-deals-product-sale-pro a:last-child").textContent = "Check Out"
+```
+
 6. Webiste Name: [Adidas](https://www.adidas.co.in/)
 
 ### Topics
@@ -101,6 +139,12 @@
 ### Output
 
 ![Output](./Pic11.png)
+
+## Solution 6
+
+```
+document.querySelector(".searchinput-wrapper___3YrvF").addEventListener("mouseover",()=>{document.querySelector(".searchinput-wrapper___3YrvF").style.backgroundColor = "red"})
+```
 
 7. Webiste Name: [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
@@ -120,6 +164,14 @@
 ### Output
 
 ![Output](./Pic13.png)
+
+## Solution 7
+```
+let input = document.querySelector(".hp-search-input")
+input.value = "async"
+
+document.querySelector("#hp-search-form").submit()
+```
 
 8. Webiste Name: [Google](https://www.google.com/)
 
