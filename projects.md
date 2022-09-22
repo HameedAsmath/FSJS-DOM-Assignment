@@ -191,6 +191,12 @@ document.querySelector("#hp-search-form").submit()
 
 ![Output](./Pic15.png)
 
+## Solution 8
+```
+let langDiv = document.querySelectorAll("#SIvCob a")
+langDiv[0].remove() 
+```
+
 9. Webiste Name: [Code Wars](https://www.codewars.com/)
 
 ### Topics
@@ -208,6 +214,14 @@ document.querySelector("#hp-search-form").submit()
 ### Output
 
 ![Output](./Pic17.png)
+
+## Solution 9
+```
+let h1 = document.querySelector(".display-heading-1")
+
+h1.style.fontFamily = "monospace"
+h1.style.color = "red"
+```
 
 10. Webiste Name: [Freecodecamp](https://www.freecodecamp.org/)
 
@@ -227,6 +241,12 @@ document.querySelector("#hp-search-form").submit()
 
 ![Output](./Pic19.png)
 
+## Solution 10
+```
+let btn = document.querySelector(".login-btn-text")
+btn.addEventListener("mouseover",()=>{btn.style.backgroundColor="red"})
+```
+
 11. Webiste Name: [realme](https://www.realme.com/in/)
 
 ### Topics
@@ -245,6 +265,16 @@ document.querySelector("#hp-search-form").submit()
 
 ![Output](./Pic21.png)
 
+## Solution 11
+```
+let parent = document.querySelector(".header .wrapper a")
+let img = document.createElement("img")
+img.setAttribute("src","https://ineuron.ai/images/ineuron-logo.png")
+document.querySelector('.icon-logo').remove()
+parent.appendChild(img)
+img.className = "icon"
+```
+
 12. Webiste Name: [Github](https://github.com/)
 
 ### Topics
@@ -262,6 +292,11 @@ document.querySelector("#hp-search-form").submit()
 ### Output
 
 ![Output](./Pic23.png)
+
+## Solution 12
+```
+document.querySelector(".f4 .btn-sm").style.backgroundColor="blue"
+```
 
 13. Webiste Name: [Hackerrank](https://www.hackerrank.com/)
 
